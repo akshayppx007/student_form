@@ -1,0 +1,56 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+    <section class="vh-100" style="background-color: #eee;">
+        <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-9">
+  
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body">
+            <form action="/api/create" method="post">
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+  
+                  <h6 class="mb-0">Permanent Address</h6>
+  
+                </div>
+                <div class="col-md-9 pe-5">
+  
+                  <textarea type="text" class="form-control" rows="3" name="permanentAddress"></textarea>
+  
+                </div>
+              </div>
+  
+              <hr class="mx-n3" />
+  
+              <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+  
+                  <h6 class="mb-0">Current Address</h6>
+  
+                </div>
+                <div class="col-md-9 pe-5">
+  
+                  <textarea type="text" class="form-control" rows="3" placeholder="" name="currentAddress" ></textarea>
+  
+                </div>
+              </div>
+    
+  
+              <hr class="mx-n3" />
+  
+              <div class="px-5 py-4">
+                <button type="submit" class="btn btn-primary btn-lg">Save</button>
+              </div>
+            </form>
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+            
+  </section>
+  <%- include('partials/footer') %>
